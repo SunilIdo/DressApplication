@@ -17,10 +17,10 @@ namespace DressingApplication
                 string ans;
                 do
                 {
-                    Console.WriteLine("Input temperature type ('Hot' or 'Cold', no case sensitive.) in first line and \nlist of commands separated by space in next line.");
+                    Console.WriteLine("Input temperature type ('Hot' or 'Cold', no case sensitive.) in first line and \nlist of commands separated by comma in next line.");
                     Console.WriteLine();
                     string tempType = Console.ReadLine().Trim().ToUpper();
-                    string[] arr_temp = Console.ReadLine().Split(' ');
+                    string[] arr_temp = Console.ReadLine().Split(',');
                     int[] arr = Array.ConvertAll(arr_temp, Int32.Parse);
                     Console.WriteLine();
                     Console.WriteLine("-----------------------------Output---------------------------------------");
